@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歷年來觀光客統計資訊網</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .description {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>歷年來台觀光客統計資訊網（按居住地統計）</h1>
+  </header>
+
+  <main>
+    <section class="description">
+      <h2> 圖表說明</h2>
+      <p>
+        本頁面展示一份互動式圖表，呈現 <strong>2018 年至 2024 年</strong>，依觀光客居住地分類的來台人數統計資料。
+      </p>
+      <ul>
+        <li>資料來源依據每年度的統計分類。</li>
+        <li>使用力量導向圖（Force Directed Graph）視覺化表現各區人數分布。</li>
+        <li>點越大代表觀光人數越多，點擊可放大觀看細節。</li>
+        <li>可觀察疫情期間（2020～2022）觀光人數下降，2023～2024 回升趨勢。</li>
+      </ul>
+    </section>
+
+    <iframe src="force.html" title="觀光客統計圖表"></iframe>
+  </main>
+
+</body>
+</html>
